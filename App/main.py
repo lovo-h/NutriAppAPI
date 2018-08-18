@@ -1,17 +1,12 @@
 from flask import Flask
 
+from App.infrastructure import routes
+
 app = Flask(__name__)
 
-
-@app.route('/')
-def hello():
-    return 'SPA Home!'
-
-
-@app.route('/api')
-def home():
-    return 'API!'
+routes.init(app)
 
 
 if __name__ == "__main__":
     app.run()
+
