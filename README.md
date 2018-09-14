@@ -7,6 +7,6 @@
 
 ### Docker
 
-* Run `docker-compose` build to create an image of the app, locally. 
+* Run `docker-compose build` to create an image of the app, locally. 
 * Then, run `docker-compose up` to get that image up and running. 
 * Navigate to http://localhost:5000/.
